@@ -1,0 +1,18 @@
+final_project.txt
+Adam Miyashiro
+4/28/16
+
+For the final project I made a game called Fall Down. The point of the game
+is to keep the ball from reaching the top of the screen. There are a series
+of levels or floors that scroll up. Each floor has a hole for the ball to
+fall into. The ball rolls according to the tilt of the board. After a certain
+amount of time, the speed that the floors scroll up increases. 
+
+Each floor is an instance of a struct and to keep track of them, they are 
+stored in a queue. The holes in each floor are generated randomly. To keep
+track of the floors they are stored in a queue. After a floor leaves the screen
+the floor is popped off of the queue. Once there is a certain gap between the
+bottom floor and the bottom of the screen a floor is pushed on the queue. The
+ball is also a struct. Each cycle, data is taken from the board's accelerometer
+and the ball's speed is updated. The speed of the ball is how many pixels it
+moves each cycle. Every cycle both the floors and the ball are redrawn.

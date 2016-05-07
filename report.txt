@@ -1,0 +1,18 @@
+report.txt
+Adam Miyashiro
+4/28/16
+
+One of the technical challenges I encountered was getting the speed
+of the ball correct. I had to change many times how many pixels the ball moves
+by depending on what the tilt of the board is. Another problem I had was
+increasing the speed the floors move up after a certain amount of time. The
+problem was that the delay between each cycle was not big enough to make
+a difference just by decreasing the delay. After a certain amount of time,
+the floors move up by 2 pixels instead of 1. This speeds up the floors a bit
+too much, but using a big delay while moving up 2 pixels causes choppy gameplay.
+
+If I could do things differently, I would change the way the floors are drawn.
+By drawing only the section that the floors move up, the gameplay may have been
+smoother. I also would have spent more time trying to get the ball to roll
+more smoothly. Lastly, I would have liked to implement a way to keep track of
+scores on the SD card.
